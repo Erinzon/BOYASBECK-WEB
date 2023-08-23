@@ -656,6 +656,45 @@ font-family: 'Raleway', sans-serif;
 /*** Contact End ***/
 
 
+/*** Contact Start ***/
+/* Existing styles for .contact-detail::before, .contact-map, and .contact-form */
+
+/* Adjust the background image size and position for smaller screens */
+@media (max-width: 800px) {
+    .contact-detail::before {
+      background-size: cover;
+      background-position: center;
+      
+    }
+
+    .contact-detail a {
+        font-size: 13px !important;
+    }
+  }
+  
+  
+  /* Adjust padding and margins for smaller screens */
+  @media (max-width: 576px) {
+    .contact-detail {
+      padding: 2rem 1rem;
+    }
+    .contact-map,
+    .contact-form {
+      padding: 1rem;
+    }
+  }
+  
+  /* Make the form inputs and button full width on smaller screens */
+  @media (max-width: 576px) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  
+  /*** Contact End ***/
+
 /*** Footer Start ***/
 
 .footer .short-link a,
@@ -676,3 +715,4 @@ font-family: 'Raleway', sans-serif;
 }
 
 /*** Footer End ***/
+
