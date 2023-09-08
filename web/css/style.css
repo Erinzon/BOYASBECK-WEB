@@ -175,7 +175,7 @@ font-family: 'Raleway', sans-serif;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(78, 77, 77, 0.171)
+    
 }
 
 .carousel-caption {
@@ -278,6 +278,7 @@ font-family: 'Raleway', sans-serif;
     
     .carousel-item img {
         min-height: 500px;
+        min-width: 100%;
         object-fit: cover;
     }
 
@@ -297,6 +298,7 @@ font-family: 'Raleway', sans-serif;
     
     .carousel-item img {
         min-height: 400px;
+        min-width: 100%;
         object-fit: cover;
     }
 
@@ -306,6 +308,28 @@ font-family: 'Raleway', sans-serif;
 
     .carousel-item p {
         font-size: 14px !important;
+    }
+}
+@media (max-width: 400px) {
+    .carousel-item {
+        min-height: 300px;
+    }
+    
+    .carousel-item img {
+        min-height: 400px;
+        min-width: 180%;
+        object-fit: cover;
+    }
+
+    .carousel-item h1 {
+        font-size: 30px !important;
+    }
+    .carousel-item h2 {
+        font-size: 30px !important;
+    }
+
+    .carousel-item p {
+        font-size: 7px !important;
     }
 }
 
